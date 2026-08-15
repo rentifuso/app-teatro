@@ -1,0 +1,3430 @@
+/* ==========================================================
+   LUCES, MÚSICA, ACCIÓN!!
+   CSS - PANTALLA INICIO
+   ========================================================== */
+
+
+/* ==========================================================
+   VARIABLES
+   ========================================================== */
+
+:root {
+
+    --azul-oscuro: #03134f;
+
+    --azul: #063da8;
+
+    --azul-medio: #0758d0;
+
+    --azul-claro: #087ee5;
+
+    --celeste: #18c8ff;
+
+    --dorado: #ffd21c;
+
+    --dorado-oscuro: #e5a900;
+
+    --blanco: #ffffff;
+
+    --texto: #dce8ff;
+
+}
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: "Montserrat", Arial, sans-serif;
+
+    background: #e5e5e5;
+
+    color: white;
+
+}
+
+
+/* ==========================================================
+   APLICACIÓN
+   ========================================================== */
+
+.app {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #07388f 0%,
+            #041b63 45%,
+            #020b38 100%
+        );
+
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.top-header {
+
+    height: 68px;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #095bd0,
+            #063b9f
+        );
+
+    box-shadow:
+
+        0 3px 12px
+        rgba(0,0,0,.35);
+
+}
+
+
+/* HAMBURGUESA */
+
+.btn-menu {
+
+    width: 60px;
+
+    height: 60px;
+
+    border: none;
+
+    background: transparent;
+
+    color: var(--dorado);
+
+    font-size: 31px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+
+.btn-menu:hover {
+
+    transform: scale(1.1);
+
+}
+
+
+/* TÍTULO HEADER */
+
+.header-title {
+
+    flex: 1;
+
+    text-align: center;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    color: white;
+
+}
+
+
+/* ESPACIO DERECHO */
+
+.header-space {
+
+    width: 60px;
+
+}
+
+
+/* ==========================================================
+   MENÚ LATERAL
+   ========================================================== */
+
+.menu-lateral {
+
+    width: 78% !important;
+
+    max-width: 380px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #063eac 0%,
+            #052b81 45%,
+            #031752 100%
+        );
+
+    border-right:
+
+        1px solid
+        rgba(255,255,255,.12);
+
+    box-shadow:
+
+        8px 0 30px
+        rgba(0,0,0,.35);
+
+}
+
+
+/* ==========================================================
+   CABECERA MENÚ
+   ========================================================== */
+
+.menu-header {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+
+        22px
+        15px
+        20px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,70,180,.75),
+            rgba(0,30,100,.25)
+        );
+
+}
+
+
+/* LOGO CIRCULAR */
+
+.logo-circulo {
+
+    width: 58px;
+
+    height: 58px;
+
+    min-width: 58px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--dorado);
+
+    font-size: 27px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            #0b66cf,
+            #03184d
+        );
+
+    border:
+
+        3px solid
+        var(--dorado);
+
+}
+
+
+/* IDENTIDAD */
+
+.menu-identidad {
+
+    padding-right: 20px;
+
+}
+
+
+.menu-titulo {
+
+    color: var(--dorado);
+
+    font-size: 15px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+}
+
+
+.menu-lugar {
+
+    margin-top: 5px;
+
+    color: #bdeaff;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+}
+
+
+/* CERRAR */
+
+.btn-close-menu {
+
+    position: absolute;
+
+    top: 10px;
+
+    right: 10px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 15px;
+
+}
+
+
+/* ==========================================================
+   OPCIONES MENÚ
+   ========================================================== */
+
+.menu-opciones {
+
+    padding:
+
+        8px
+        13px
+        20px;
+
+}
+
+
+.menu-item {
+
+    min-height: 62px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 4px;
+
+    padding:
+
+        0
+        18px;
+
+    border-radius: 13px;
+
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    transition:
+
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+
+.menu-icono {
+
+    width: 29px;
+
+    min-width: 29px;
+
+    text-align: center;
+
+    color: var(--dorado);
+
+    font-size: 20px;
+
+}
+
+
+.menu-item:hover {
+
+    background:
+
+        rgba(255,255,255,.08);
+
+    transform:
+
+        translateX(3px);
+
+}
+
+
+.menu-item.activo {
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #ffdf27,
+            #f3b700
+        );
+
+    color: #111;
+
+    box-shadow:
+
+        0 4px 12px
+        rgba(0,0,0,.25);
+
+}
+
+
+.menu-item.activo .menu-icono {
+
+    color: #111;
+
+}
+
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.hero {
+
+    position: relative;
+
+    min-height: 520px;
+
+    overflow: hidden;
+
+}
+
+
+/* IMAGEN DE FONDO */
+
+.hero-imagen {
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+
+        url("../img/bg.png");
+
+    background-size: cover;
+
+    background-position:
+
+        center center;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/* CAPA OSCURA */
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05) 0%,
+            rgba(0,0,15,.18) 40%,
+            rgba(1,6,30,.86) 100%
+        );
+
+}
+
+
+/* CONTENIDO HERO */
+
+.hero-contenido {
+
+    position: relative;
+
+    z-index: 2;
+
+    min-height: 520px;
+
+    padding:
+
+        180px
+        20px
+        30px;
+
+    text-align: center;
+
+}
+
+
+/* TEATRO */
+
+.badge-teatro {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding:
+
+        8px
+        16px;
+
+    border:
+
+        2px solid
+        var(--dorado);
+
+    border-radius: 30px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #a76d0b,
+            #614000
+        );
+
+    color: #fff4a5;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    box-shadow:
+
+        0 0 15px
+        rgba(255,210,28,.35);
+
+}
+
+
+/* TÍTULO */
+
+.hero h1 {
+
+    margin-top: 18px;
+
+    color: white;
+
+    font-size:
+
+        clamp(
+            29px,
+            8vw,
+            43px
+        );
+
+    line-height: 1.05;
+
+    font-weight: 800;
+
+    text-shadow:
+
+        0 3px 8px
+        rgba(0,0,0,.95);
+
+}
+
+
+/* SUBTÍTULO */
+
+.hero-subtitulo {
+
+    max-width: 390px;
+
+    margin:
+
+        12px
+        auto
+        22px;
+
+    color: #e9f0ff;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    font-weight: 600;
+
+    text-shadow:
+
+        0 2px 5px
+        rgba(0,0,0,.9);
+
+}
+
+
+/* BOTÓN */
+
+.btn-programa {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: min(88%, 390px);
+
+    min-height: 56px;
+
+    margin: auto;
+
+    border-radius: 14px;
+
+    border:
+
+        2px solid
+        #ffe45b;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #ffe039,
+            #efb000
+        );
+
+    color: #171100;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    box-shadow:
+
+        0 5px 18px
+        rgba(0,0,0,.45);
+
+    transition: .25s;
+
+}
+
+
+.btn-programa:hover {
+
+    color: #111;
+
+    transform:
+
+        translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   INFORMACIÓN
+   ========================================================== */
+
+.informacion {
+
+    margin:
+
+        14px
+        18px
+        0;
+
+    padding:
+
+        18px;
+
+    border-radius: 17px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(19,91,218,.9),
+            rgba(6,43,125,.95)
+        );
+
+    border:
+
+        1px solid
+        rgba(76,166,255,.45);
+
+}
+
+
+.info-bloque {
+
+    display: flex;
+
+    gap: 14px;
+
+    align-items: flex-start;
+
+}
+
+
+.info-bloque + .info-bloque {
+
+    margin-top: 18px;
+
+}
+
+
+.info-icono {
+
+    min-width: 34px;
+
+    color: var(--dorado);
+
+    font-size: 25px;
+
+}
+
+
+.info-icono.celeste {
+
+    color: var(--celeste);
+
+}
+
+
+.info-titulo {
+
+    color: var(--dorado);
+
+    font-size: 19px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+}
+
+
+.info-titulo.blanco {
+
+    color: white;
+
+}
+
+
+.info-texto {
+
+    margin-top: 4px;
+
+    color: var(--texto);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   CONTACTO
+   ========================================================== */
+
+.contacto {
+
+    padding:
+
+        22px
+        18px
+        14px;
+
+    text-align: center;
+
+}
+
+
+.contacto-titulo {
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+}
+
+
+.contacto-whatsapp {
+
+    display: inline-block;
+
+    margin-top: 6px;
+
+    color: var(--dorado);
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   SINOPSIS RESUMEN
+   ========================================================== */
+
+.sinopsis-resumen {
+
+    margin:
+
+        12px
+        18px
+        25px;
+
+    padding:
+
+        20px;
+
+    border-radius: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(8,86,207,.95),
+            rgba(7,38,116,.95)
+        );
+
+    border:
+
+        1px solid
+        rgba(35,176,255,.55);
+
+    box-shadow:
+
+        inset
+        0 0 25px
+        rgba(0,170,255,.10);
+
+}
+
+
+/* TÍTULO SINOPSIS */
+
+.sinopsis-resumen h2 {
+
+    margin-bottom: 13px;
+
+    color: var(--dorado);
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+}
+
+
+.sinopsis-resumen h2 i {
+
+    margin-right: 6px;
+
+}
+
+
+/* TEXTO */
+
+.sinopsis-resumen p {
+
+    margin: 0;
+
+    color: #e2ebff;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    font-weight: 500;
+
+}
+
+
+/* ==========================================================
+   BOTÓN SINOPSIS COMPLETA
+   ========================================================== */
+
+.btn-sinopsis {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    width: 100%;
+
+    margin-top: 18px;
+
+    padding:
+
+        12px
+        15px;
+
+    border:
+
+        1px solid
+        rgba(24,200,255,.8);
+
+    border-radius: 12px;
+
+    background:
+
+        rgba(5,75,180,.45);
+
+    color: var(--celeste);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: .25s;
+
+}
+
+
+.btn-sinopsis:hover {
+
+    background:
+
+        rgba(18,120,230,.65);
+
+    color: white;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.footer {
+
+    padding:
+
+        35px
+        20px
+        30px;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            #031752,
+            #020a30
+        );
+
+    border-top:
+
+        1px solid
+        rgba(255,255,255,.08);
+
+}
+
+
+/* LOGO */
+
+.footer-logo img {
+
+    display: block;
+
+    width:
+
+        min(
+            190px,
+            65%
+        );
+
+    height: auto;
+
+    margin:
+
+        0
+        auto
+        15px;
+
+}
+
+/* ==========================================================
+   LOGO DEL ESPECTÁCULO - FOOTER
+   ========================================================== */
+
+.footer-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.footer-logo img {
+
+    width: 145px;
+
+    height: 145px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+/* COOPERATIVA */
+
+.footer-cooperativa {
+
+    color: white;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+}
+
+
+/* LUGAR */
+
+.footer-lugar {
+
+    margin-top: 7px;
+
+    color: #b9cfff;
+
+    font-size: 11px;
+
+}
+
+
+/* COPYRIGHT */
+
+.footer-copy {
+
+    margin-top: 15px;
+
+    color: #7285b5;
+
+    font-size: 9px;
+
+}
+
+
+/* ==========================================================
+   CELULARES PEQUEÑOS
+   ========================================================== */
+
+@media (max-width: 375px) {
+
+
+    .menu-lateral {
+
+        width: 82% !important;
+
+    }
+
+
+    .menu-item {
+
+        min-height: 57px;
+
+        font-size: 14px;
+
+    }
+
+
+    .hero {
+
+        min-height: 500px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 500px;
+
+        padding-top: 165px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 28px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 576px) {
+
+
+    .app {
+
+        max-width: 768px;
+
+        margin: auto;
+
+    }
+
+
+    .hero {
+
+        min-height: 600px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 600px;
+
+        padding-top: 220px;
+
+    }
+
+
+    .informacion {
+
+        margin-left: 30px;
+
+        margin-right: 30px;
+
+    }
+
+
+    .sinopsis-resumen {
+
+        margin-left: 30px;
+
+        margin-right: 30px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   ESCRITORIO
+   ========================================================== */
+
+@media (min-width: 992px) {
+
+
+    body {
+
+        background:
+
+            linear-gradient(
+                135deg,
+                #d8d8d8,
+                #f3f3f3
+            );
+
+    }
+
+
+    .app {
+
+        max-width: 1100px;
+
+        margin:
+
+            20px
+            auto;
+
+        border-radius: 20px;
+
+        overflow: hidden;
+
+        box-shadow:
+
+            0 10px 40px
+            rgba(0,0,0,.25);
+
+    }
+
+
+    .hero {
+
+        min-height: 650px;
+
+    }
+
+
+    .hero-contenido {
+
+        min-height: 650px;
+
+        padding-top: 260px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 50px;
+
+    }
+
+
+    .hero-subtitulo {
+
+        font-size: 18px;
+
+        max-width: 600px;
+
+    }
+
+
+    .informacion {
+
+        max-width: 850px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .sinopsis-resumen {
+
+        max-width: 850px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+}
+
+/* ==========================================================
+   PANTALLA SINOPSIS
+   ========================================================== */
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.pagina-sinopsis {
+
+    padding-bottom: 10px;
+
+}
+
+
+/* ==========================================================
+   IMAGEN TEATRO
+   ========================================================== */
+
+.sinopsis-hero {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 210px;
+
+    overflow: hidden;
+
+}
+
+
+.sinopsis-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.05),
+            rgba(2,20,75,.75)
+        );
+
+}
+
+
+.sinopsis-hero img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    display: block;
+
+}
+
+
+/* ==========================================================
+   INTRODUCCIÓN
+   ========================================================== */
+
+.sinopsis-introduccion {
+
+    padding:
+
+        20px
+        20px
+        10px;
+
+}
+
+
+.sinopsis-introduccion h1 {
+
+    margin: 0;
+
+    color: var(--dorado);
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+}
+
+
+.sinopsis-introduccion h1 i {
+
+    margin-right: 7px;
+
+}
+
+
+.sinopsis-introduccion p {
+
+    margin:
+
+        7px
+        0
+        0;
+
+    color: #cdeaff;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   TARJETA DE SINOPSIS
+   ========================================================== */
+
+.sinopsis-card {
+
+    margin:
+
+        10px
+        18px
+        25px;
+
+    padding:
+
+        20px;
+
+    border-radius: 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(21,100,216,.90),
+            rgba(7,49,133,.96)
+        );
+
+    border:
+
+        1px solid
+        rgba(54,177,255,.55);
+
+    box-shadow:
+
+        0 5px 18px
+        rgba(0,0,0,.22);
+
+}
+
+
+/* ==========================================================
+   TÍTULO DE LA TARJETA
+   ========================================================== */
+
+.sinopsis-card h2 {
+
+    margin:
+
+        0
+        0
+        17px;
+
+    color: var(--dorado);
+
+    font-size: 21px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   TEXTO
+   ========================================================== */
+
+.sinopsis-card p {
+
+    margin:
+
+        0
+        0
+        18px;
+
+    color: #eaf2ff;
+
+    font-size: 13px;
+
+    line-height: 1.65;
+
+    font-weight: 500;
+
+}
+
+
+.sinopsis-card p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.sinopsis-card strong {
+
+    color: white;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 576px) {
+
+
+    .sinopsis-hero {
+
+        height: 280px;
+
+    }
+
+
+    .sinopsis-introduccion {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
+    }
+
+
+    .sinopsis-card {
+
+        margin-left: 30px;
+
+        margin-right: 30px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   ESCRITORIO
+   ========================================================== */
+
+@media (min-width: 992px) {
+
+
+    .sinopsis-hero {
+
+        height: 360px;
+
+    }
+
+
+    .sinopsis-introduccion {
+
+        max-width: 850px;
+
+        margin:
+
+            0
+            auto;
+
+    }
+
+
+    .sinopsis-card {
+
+        max-width: 850px;
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .sinopsis-card p {
+
+        font-size: 15px;
+
+        line-height: 1.75;
+
+    }
+
+}
+
+/*========================================================== */
+/*PANTALLA ELENCO*/
+
+
+/* ----------------------------------------------------------
+   CONTENIDO GENERAL
+   ---------------------------------------------------------- */
+
+.elenco-content {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 30px 18px 40px;
+
+}
+
+
+/* ----------------------------------------------------------
+   ENCABEZADO DE SECCIÓN
+   ---------------------------------------------------------- */
+
+.section-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.heading-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+}
+
+
+.heading-icon i {
+
+    color: #ffd329;
+
+    font-size: 32px;
+
+}
+
+
+.section-heading h2 {
+
+    margin: 0;
+
+    color: #ffd329;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+.section-heading p {
+
+    margin: 3px 0 0;
+
+    color: #bdefff;
+
+    font-size: 14px;
+
+}
+
+
+/* ----------------------------------------------------------
+   LISTA DE ARTISTAS
+   ---------------------------------------------------------- */
+
+.elenco-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+
+}
+
+
+/* ----------------------------------------------------------
+   TARJETA DEL ARTISTA
+   ---------------------------------------------------------- */
+
+.artist-card {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+    min-height: 145px;
+
+    padding: 15px 18px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(38, 123, 211, 0.85),
+            rgba(18, 66, 145, 0.88)
+        );
+
+    border: 1px solid rgba(78, 191, 255, 0.28);
+
+    border-radius: 20px;
+
+    box-shadow:
+
+        0 7px 18px rgba(0, 0, 0, 0.28),
+
+        inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+    transition:
+
+        transform 0.25s ease,
+
+        box-shadow 0.25s ease;
+
+}
+
+
+/* Efecto al pasar el mouse */
+
+.artist-card:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 12px 25px rgba(0, 0, 0, 0.35),
+
+        0 0 15px rgba(60, 190, 255, 0.15);
+
+}
+
+
+/* ----------------------------------------------------------
+   FOTO
+   ---------------------------------------------------------- */
+
+.artist-photo {
+
+    width: 112px;
+
+    height: 112px;
+
+    flex-shrink: 0;
+
+    margin-right: 20px;
+
+    border-radius: 50%;
+
+    padding: 3px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffe47a,
+            #dcae26,
+            #fff0a6
+        );
+
+    box-shadow:
+
+        0 0 0 2px rgba(255, 210, 50, 0.25),
+
+        0 5px 15px rgba(0, 0, 0, 0.35);
+
+}
+
+
+.artist-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+}
+
+
+/* ----------------------------------------------------------
+   INFORMACIÓN DEL ARTISTA
+   ---------------------------------------------------------- */
+
+.artist-info {
+
+    flex: 1;
+
+}
+
+
+.artist-info h3 {
+
+    margin: 0 0 6px;
+
+    color: #ffffff;
+
+    font-size: 22px;
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+}
+
+
+.artist-info p {
+
+    margin: 0;
+
+    color: #ffd52d;
+
+    font-size: 17px;
+
+    line-height: 1.25;
+
+    font-weight: 700;
+
+}
+
+
+/* ----------------------------------------------------------
+   FOOTER
+   ---------------------------------------------------------- */
+
+.site-footer {
+
+    margin-top: 45px;
+
+    padding: 30px 15px 35px;
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+
+.footer-logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+
+}
+
+
+.footer-logo img {
+
+    width: 130px;
+
+    height: 130px;
+
+    object-fit: contain;
+
+    display: block;
+
+}
+
+
+.site-footer p {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+}
+
+
+.site-footer small {
+
+    display: block;
+
+    margin-top: 8px;
+
+    color: #8fdcff;
+
+    font-size: 12px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - CELULARES
+   ========================================================== */
+
+@media (max-width: 576px) {
+
+
+    .elenco-content {
+
+        padding:
+
+            25px
+
+            13px
+
+            30px;
+
+    }
+
+
+    .section-heading {
+
+        gap: 10px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .heading-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+    }
+
+
+    .heading-icon i {
+
+        font-size: 28px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .section-heading p {
+
+        font-size: 12px;
+
+    }
+
+
+    .elenco-list {
+
+        gap: 14px;
+
+    }
+
+
+    .artist-card {
+
+        min-height: 125px;
+
+        padding: 12px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .artist-photo {
+
+        width: 88px;
+
+        height: 88px;
+
+        margin-right: 15px;
+
+    }
+
+
+    .artist-info h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .artist-info p {
+
+        font-size: 14px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================== */
+
+@media (max-width: 380px) {
+
+
+    .artist-photo {
+
+        width: 76px;
+
+        height: 76px;
+
+        margin-right: 12px;
+
+    }
+
+
+    .artist-info h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .artist-info p {
+
+        font-size: 13px;
+
+    }
+
+
+}
+
+/* ==========================================================
+   PANTALLA PROGRAMA MUSICAL
+   ========================================================== */
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.programa-content {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding: 28px 18px 40px;
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+   ========================================================== */
+
+.programa-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.programa-heading-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.programa-heading-icon i {
+
+    color: var(--dorado);
+
+    font-size: 30px;
+
+}
+
+
+.programa-heading h1 {
+
+    margin: 0;
+
+    color: var(--dorado);
+
+    font-size: 26px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   SUBTÍTULO
+   ========================================================== */
+
+.programa-subtitulo {
+
+    margin-bottom: 22px;
+
+    color: #bdeaff;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================================================
+   LISTA
+   ========================================================== */
+
+.programa-lista {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+/* ==========================================================
+   TARJETA
+   ========================================================== */
+
+.programa-card {
+
+    width: 100%;
+
+    min-height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px 15px;
+
+    border-radius: 15px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #1168d1,
+            #063b9e
+        );
+
+    border:
+
+        1px solid
+        rgba(84,190,255,.35);
+
+    box-shadow:
+
+        0 5px 13px
+        rgba(0,0,0,.28);
+
+    transition:
+
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+/* EFECTO HOVER */
+
+.programa-card:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+
+        0 9px 20px
+        rgba(0,0,0,.38);
+
+}
+
+
+/* ==========================================================
+   NÚMERO
+   ========================================================== */
+
+.programa-numero {
+
+    width: 55px;
+
+    min-width: 55px;
+
+    color: var(--dorado);
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   DATOS
+   ========================================================== */
+
+.programa-datos {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding-left: 8px;
+
+}
+
+
+/* ==========================================================
+   NOMBRE DEL TEMA
+   ========================================================== */
+
+.programa-tema {
+
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    font-weight: 700;
+
+}
+
+
+/* ==========================================================
+   REFERENCIA ENTRE PARÉNTESIS
+   ========================================================== */
+
+.programa-referencia {
+
+    color: var(--dorado);
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   CELULAR
+   ========================================================== */
+
+@media (max-width: 575px) {
+
+
+    .programa-content {
+
+        padding:
+
+            25px
+            13px
+            35px;
+
+    }
+
+
+    .programa-heading {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .programa-heading-icon {
+
+        width: 42px;
+
+        height: 42px;
+
+        min-width: 42px;
+
+    }
+
+
+    .programa-heading-icon i {
+
+        font-size: 27px;
+
+    }
+
+
+    .programa-heading h1 {
+
+        font-size: 23px;
+
+    }
+
+
+    .programa-subtitulo {
+
+        margin-bottom: 18px;
+
+        font-size: 13px;
+
+    }
+
+
+    .programa-lista {
+
+        gap: 10px;
+
+    }
+
+
+    .programa-card {
+
+        min-height: 65px;
+
+        padding:
+
+            9px
+            10px;
+
+        border-radius: 14px;
+
+    }
+
+
+    .programa-numero {
+
+        width: 43px;
+
+        min-width: 43px;
+
+        font-size: 17px;
+
+    }
+
+
+    .programa-datos {
+
+        padding-left: 5px;
+
+    }
+
+
+    .programa-tema {
+
+        font-size: 14px;
+
+        line-height: 1.35;
+
+    }
+
+
+    .programa-referencia {
+
+        font-size: 11px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================== */
+
+@media (max-width: 375px) {
+
+
+    .programa-content {
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    .programa-numero {
+
+        width: 38px;
+
+        min-width: 38px;
+
+        font-size: 15px;
+
+    }
+
+
+    .programa-tema {
+
+        font-size: 13px;
+
+    }
+
+
+    .programa-referencia {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 576px) {
+
+
+    .programa-content {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
+    }
+
+
+    .programa-card {
+
+        min-height: 78px;
+
+        padding:
+
+            12px
+            18px;
+
+    }
+
+
+    .programa-numero {
+
+        width: 65px;
+
+        min-width: 65px;
+
+        font-size: 22px;
+
+    }
+
+
+    .programa-tema {
+
+        font-size: 17px;
+
+    }
+
+
+    .programa-referencia {
+
+        font-size: 13px;
+
+    }
+
+}
+
+/* ==========================================================
+   PANTALLA GALERÍA DE FOTOS
+   ========================================================== */
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.galeria-content {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+
+        28px
+        18px
+        45px;
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+   ========================================================== */
+
+.galeria-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+
+    text-align: center;
+
+}
+
+
+.galeria-heading-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.galeria-heading-icon i {
+
+    color: var(--dorado);
+
+    font-size: 30px;
+
+}
+
+
+.galeria-heading h1 {
+
+    margin: 0;
+
+    color: var(--dorado);
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+}
+
+
+/* ==========================================================
+   GRID DE FOTOS
+   ========================================================== */
+
+.galeria-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(2, 1fr);
+
+    gap: 16px;
+
+}
+
+
+/* ==========================================================
+   TARJETA
+   ========================================================== */
+
+.galeria-card {
+
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    overflow: hidden;
+
+    background: #061d59;
+
+    border-radius: 12px;
+
+    border:
+
+        1px solid
+        rgba(84,190,255,.35);
+
+    box-shadow:
+
+        0 6px 16px
+        rgba(0,0,0,.30);
+
+}
+
+
+/* ==========================================================
+   IMAGEN
+   ========================================================== */
+
+.galeria-card img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition:
+
+        transform .45s ease;
+
+}
+
+
+/* ==========================================================
+   EFECTO ZOOM
+   ========================================================== */
+
+.galeria-card:hover img {
+
+    transform:
+
+        scale(1.07);
+
+}
+
+
+/* ==========================================================
+   CAPA OSCURA
+   ========================================================== */
+
+.galeria-overlay {
+
+    position: absolute;
+
+    left: 0;
+
+    right: 0;
+
+    bottom: 0;
+
+    padding:
+
+        35px
+        12px
+        12px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,0),
+            rgba(0,5,30,.88)
+        );
+
+}
+
+
+/* ==========================================================
+   TEXTO
+   ========================================================== */
+
+.galeria-texto {
+
+    color: var(--dorado);
+
+    font-size: 13px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    text-shadow:
+
+        0 2px 5px
+        rgba(0,0,0,.9);
+
+}
+
+
+/* ==========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================== */
+
+@media (max-width: 375px) {
+
+
+    .galeria-content {
+
+        padding:
+
+            23px
+            10px
+            35px;
+
+    }
+
+
+    .galeria-grid {
+
+        gap: 10px;
+
+    }
+
+
+    .galeria-texto {
+
+        font-size: 11px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 576px) {
+
+
+    .galeria-content {
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+
+    }
+
+
+    .galeria-grid {
+
+        grid-template-columns:
+
+            repeat(3, 1fr);
+
+        gap: 18px;
+
+    }
+
+
+    .galeria-texto {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   ESCRITORIO
+   ========================================================== */
+
+@media (min-width: 992px) {
+
+
+    .galeria-content {
+
+        padding:
+
+            35px
+            30px
+            50px;
+
+    }
+
+
+    .galeria-heading {
+
+        margin-bottom: 32px;
+
+    }
+
+
+    .galeria-heading-icon i {
+
+        font-size: 34px;
+
+    }
+
+
+    .galeria-heading h1 {
+
+        font-size: 29px;
+
+    }
+
+
+    .galeria-grid {
+
+        grid-template-columns:
+
+            repeat(4, 1fr);
+
+        gap: 20px;
+
+    }
+
+
+    .galeria-texto {
+
+        font-size: 14px;
+
+    }
+
+}
+
+/* ==========================================================
+   PANTALLA ENTRADAS
+   ========================================================== */
+
+
+/* ==========================================================
+   CONTENEDOR
+   ========================================================== */
+
+.entradas-content {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    padding:
+
+        35px
+        18px
+        45px;
+
+}
+
+
+/* ==========================================================
+   ENCABEZADO
+   ========================================================== */
+
+.entradas-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.entradas-icono {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.entradas-icono i {
+
+    color: var(--dorado);
+
+    font-size: 34px;
+
+}
+
+
+.entradas-heading h1 {
+
+    margin: 0;
+
+    color: var(--dorado);
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   BLOQUE DE COMPRA
+   ========================================================== */
+
+.entradas-compra {
+
+    padding:
+
+        28px
+        20px;
+
+    border-radius: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(17,104,209,.92),
+            rgba(5,48,126,.96)
+        );
+
+    border:
+
+        1px solid
+        rgba(76,181,255,.45);
+
+    box-shadow:
+
+        0 8px 25px
+        rgba(0,0,0,.30);
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   MENSAJE
+   ========================================================== */
+
+.entradas-mensaje {
+
+    margin: 0;
+
+    color: white;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+
+    font-weight: 600;
+
+}
+
+
+.entradas-mensaje strong {
+
+    color: white;
+
+    font-weight: 800;
+
+}
+
+
+/* ==========================================================
+   TELÉFONO
+   ========================================================== */
+
+.entradas-telefono {
+
+    margin-top: 14px;
+
+    color: var(--dorado);
+
+    font-size: 30px;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow:
+
+        0 2px 7px
+        rgba(0,0,0,.35);
+
+}
+
+
+/* ==========================================================
+   SEPARADOR
+   ========================================================== */
+
+.entradas-separador {
+
+    width: 85%;
+
+    height: 1px;
+
+    margin:
+
+        27px
+        auto
+        22px;
+
+    background:
+
+        rgba(255,255,255,.65);
+
+}
+
+
+/* ==========================================================
+   PRECIOS
+   ========================================================== */
+
+.entradas-precios {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 14px;
+
+}
+
+
+.precio-item {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding:
+
+        7px
+        5px;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+}
+
+
+.precio-item strong {
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+}
+
+
+/* ==========================================================
+   ENTRADA ANTICIPADA - DESTACADA
+   ========================================================== */
+
+.precio-anticipada {
+
+    padding:
+
+        13px
+        15px;
+
+    border-radius: 12px;
+
+    background:
+
+        rgba(255,210,28,.12);
+
+    border:
+
+        1px solid
+        rgba(255,210,28,.40);
+
+}
+
+
+.precio-anticipada span {
+
+    font-size: 18px;
+
+    font-weight: 800;
+
+}
+
+
+.precio-anticipada strong {
+
+    color: var(--dorado);
+
+    font-size: 22px;
+
+}
+
+
+/* ==========================================================
+   FECHA
+   ========================================================== */
+
+.entradas-fecha {
+
+    margin-top: 27px;
+
+    text-align: center;
+
+    color: #dceaff;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+
+.entradas-fecha i {
+
+    margin-right: 6px;
+
+    color: var(--dorado);
+
+    font-size: 17px;
+
+}
+
+
+/* ==========================================================
+   CELULARES
+   ========================================================== */
+
+@media (max-width: 575px) {
+
+
+    .entradas-content {
+
+        padding:
+
+            28px
+            13px
+            38px;
+
+    }
+
+
+    .entradas-heading {
+
+        margin-bottom: 23px;
+
+    }
+
+
+    .entradas-icono i {
+
+        font-size: 29px;
+
+    }
+
+
+    .entradas-heading h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .entradas-compra {
+
+        padding:
+
+            25px
+            15px;
+
+        border-radius: 18px;
+
+    }
+
+
+    .entradas-mensaje {
+
+        font-size: 15px;
+
+    }
+
+
+    .entradas-telefono {
+
+        font-size: 27px;
+
+    }
+
+
+    .entradas-separador {
+
+        width: 90%;
+
+        margin-top: 25px;
+
+        margin-bottom: 19px;
+
+    }
+
+
+    .precio-item {
+
+        font-size: 14px;
+
+    }
+
+
+    .precio-item strong {
+
+        font-size: 16px;
+
+    }
+
+
+    .precio-anticipada span {
+
+        font-size: 16px;
+
+    }
+
+
+    .precio-anticipada strong {
+
+        font-size: 20px;
+
+    }
+
+
+    .entradas-fecha {
+
+        font-size: 13px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   CELULARES MUY PEQUEÑOS
+   ========================================================== */
+
+@media (max-width: 375px) {
+
+
+    .entradas-content {
+
+        padding-left: 10px;
+
+        padding-right: 10px;
+
+    }
+
+
+    .entradas-mensaje {
+
+        font-size: 14px;
+
+    }
+
+
+    .entradas-telefono {
+
+        font-size: 24px;
+
+    }
+
+
+    .precio-item {
+
+        gap: 8px;
+
+        font-size: 13px;
+
+    }
+
+
+    .precio-item strong {
+
+        font-size: 15px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (min-width: 576px) {
+
+
+    .entradas-content {
+
+        padding:
+
+            45px
+            30px
+            55px;
+
+    }
+
+
+    .entradas-compra {
+
+        padding:
+
+            35px
+            30px;
+
+    }
+
+
+    .entradas-mensaje {
+
+        font-size: 18px;
+
+    }
+
+
+    .entradas-telefono {
+
+        font-size: 34px;
+
+    }
+
+
+}
+
+
+/* ==========================================================
+   ESCRITORIO
+   ========================================================== */
+
+@media (min-width: 992px) {
+
+
+    .entradas-content {
+
+        padding-top: 55px;
+
+    }
+
+
+    .entradas-heading h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .entradas-compra {
+
+        padding:
+
+            40px
+            45px;
+
+    }
+
+
+    .entradas-telefono {
+
+        font-size: 38px;
+
+    }
+
+
+}

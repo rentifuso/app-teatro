@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sinopsis - Luces, Música, Acción!!</title>
+
+
+    <!-- =====================================================
+         BOOTSTRAP
+         ===================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         BOOTSTRAP ICONS
+         ===================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+         ===================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         CSS
+         ===================================================== -->
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="top-header">
+
+
+        <!-- HAMBURGUESA -->
+
+        <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-label="Abrir menú">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- TÍTULO -->
+
+        <div class="header-title">
+
+            Sinopsis
+
+        </div>
+
+
+        <div class="header-space"></div>
+
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MENÚ LATERAL
+         ===================================================== -->
+
+    <div
+        class="offcanvas offcanvas-start menu-lateral"
+        tabindex="-1"
+        id="menuPrincipal">
+
+
+        <!-- CABECERA -->
+
+        <div class="menu-header">
+
+
+            <div class="logo-circulo">
+
+                <i class="bi bi-music-note-beamed"></i>
+
+            </div>
+
+
+            <div class="menu-identidad">
+
+                <div class="menu-titulo">
+
+                    ¡Luces, Música, Acción!!
+
+                </div>
+
+                <div class="menu-lugar">
+
+                    Teatro Colón · Mar del Plata
+
+                </div>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="btn-close-menu"
+                data-bs-dismiss="offcanvas"
+                aria-label="Cerrar">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             MENÚ
+             ================================================= -->
+
+        <nav class="menu-opciones">
+
+
+            <!-- INICIO -->
+
+            <a
+                href="index.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-house-fill"></i>
+                </span>
+
+                <span>
+                    Inicio
+                </span>
+
+            </a>
+
+
+            <!-- SINOPSIS -->
+
+            <a
+                href="sinopsis.html"
+                class="menu-item activo">
+
+                <span class="menu-icono">
+                    <i class="bi bi-book-half"></i>
+                </span>
+
+                <span>
+                    Sinopsis
+                </span>
+
+            </a>
+
+
+            <!-- ELENCO -->
+
+            <a
+                href="elenco.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-people-fill"></i>
+                </span>
+
+                <span>
+                    Elenco
+                </span>
+
+            </a>
+
+
+            <!-- PROGRAMA -->
+
+            <a
+                href="programa.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-music-note-list"></i>
+                </span>
+
+                <span>
+                    Programa Musical
+                </span>
+
+            </a>
+
+
+            <!-- GALERÍA -->
+
+            <a
+                href="galeria.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-images"></i>
+                </span>
+
+                <span>
+                    Galería de Fotos
+                </span>
+
+            </a>
+
+
+            <!-- ENTRADAS -->
+
+            <a
+                href="entradas.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-ticket-perforated-fill"></i>
+                </span>
+
+                <span>
+                    Entradas
+                </span>
+
+            </a>
+
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
+
+    <main class="pagina-sinopsis">
+
+
+        <!-- =================================================
+             IMAGEN DEL TEATRO
+             ================================================= -->
+
+        <section class="sinopsis-hero">
+
+
+            <img
+                src="img/bg.png"
+                alt="Teatro Municipal Colón de Mar del Plata">
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             TÍTULO
+             ================================================= -->
+
+        <section class="sinopsis-introduccion">
+
+
+            <h1>
+
+                <i class="bi bi-book-half"></i>
+
+                Sinopsis Oficial
+
+            </h1>
+
+
+            <p>
+
+                La magia del cine hecha canción en el Teatro Colón
+
+            </p>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             SINOPSIS COMPLETA
+             ================================================= -->
+
+        <section class="sinopsis-card">
+
+
+            <h2>
+
+                Una Experiencia Escénica
+                <br>
+                Inolvidable
+
+            </h2>
+
+
+            <p>
+
+                <strong>“Luces, Música, Acción!!”</strong>
+                nace como un homenaje apasionado al gran arte
+                del espectáculo.
+
+                La obra transporta a los espectadores por un
+                recorrido sensorial donde el teatro y el cine
+                se entrelazan a través de las composiciones
+                más memorables del siglo XX y XXI.
+
+            </p>
+
+
+            <p>
+
+                Desde las bambalinas del viejo varieté hasta
+                la elegancia misteriosa del cine de espías,
+                pasando por la gracia del swing americano,
+                el drama de Broadway y la ternura del universo
+                animado, el show despliega más de 120 minutos
+                de pura emoción.
+
+            </p>
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-logo">
+
+            <img
+                src="img/logo-espectaculo.png"
+                alt="Luces, Música, Acción!!">
+
+        </div>
+
+
+        <div class="footer-cooperativa">
+
+            Cooperativa de Comedia Musical Marplatense
+
+        </div>
+
+
+        <div class="footer-lugar">
+
+            Teatro Municipal Colón · Mar del Plata
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 · Todos los derechos reservados
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+
+
+<!-- =========================================================
+     BOOTSTRAP JS
+     ========================================================= -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

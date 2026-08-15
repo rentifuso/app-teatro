@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Programa Musical - Luces, Música, Acción!!</title>
+
+
+    <!-- ==================================================
+         BOOTSTRAP
+         ================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         BOOTSTRAP ICONS
+         ================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- ==================================================
+         GOOGLE FONT
+         ================================================== -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- ==================================================
+         CSS PROPIO
+         ================================================== -->
+
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- ==================================================
+         HEADER
+         ================================================== -->
+
+    <header class="top-header">
+
+
+        <!-- HAMBURGUESA -->
+
+        <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-label="Abrir menú">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- TÍTULO -->
+
+        <div class="header-title">
+
+            Programa musical
+
+        </div>
+
+
+        <!-- ESPACIADOR -->
+
+        <div class="header-space"></div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MENÚ LATERAL
+         ================================================== -->
+
+    <div
+        class="offcanvas offcanvas-start menu-lateral"
+        tabindex="-1"
+        id="menuPrincipal"
+        aria-labelledby="menuPrincipalLabel">
+
+
+        <!-- CABECERA -->
+
+        <div class="menu-header">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-circulo">
+
+                <i class="bi bi-music-note-beamed"></i>
+
+            </div>
+
+
+            <!-- IDENTIDAD -->
+
+            <div class="menu-identidad">
+
+                <div class="menu-titulo">
+
+                    ¡Luces, Música, Acción!!
+
+                </div>
+
+                <div class="menu-lugar">
+
+                    Teatro Colón · Mar del Plata
+
+                </div>
+
+            </div>
+
+
+            <!-- CERRAR -->
+
+            <button
+                type="button"
+                class="btn-close-menu"
+                data-bs-dismiss="offcanvas"
+                aria-label="Cerrar menú">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+
+        </div>
+
+
+
+        <!-- ==================================================
+             OPCIONES
+             ================================================== -->
+
+        <nav class="menu-opciones">
+
+
+            <!-- INICIO -->
+
+            <a
+                href="index.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-house-fill"></i>
+
+                </span>
+
+                <span>
+
+                    Inicio
+
+                </span>
+
+            </a>
+
+
+            <!-- SINOPSIS -->
+
+            <a
+                href="sinopsis.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-book-half"></i>
+
+                </span>
+
+                <span>
+
+                    Sinopsis
+
+                </span>
+
+            </a>
+
+
+            <!-- ELENCO -->
+
+            <a
+                href="elenco.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-people-fill"></i>
+
+                </span>
+
+                <span>
+
+                    Elenco
+
+                </span>
+
+            </a>
+
+
+            <!-- PROGRAMA -->
+
+            <a
+                href="programa.html"
+                class="menu-item activo">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-music-note-list"></i>
+
+                </span>
+
+                <span>
+
+                    Programa Musical
+
+                </span>
+
+            </a>
+
+
+            <!-- GALERÍA -->
+
+            <a
+                href="galeria.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-images"></i>
+
+                </span>
+
+                <span>
+
+                    Galería de Fotos
+
+                </span>
+
+            </a>
+
+
+            <!-- ENTRADAS -->
+
+            <a
+                href="entradas.html"
+                class="menu-item">
+
+                <span class="menu-icono">
+
+                    <i class="bi bi-ticket-perforated-fill"></i>
+
+                </span>
+
+                <span>
+
+                    Entradas
+
+                </span>
+
+            </a>
+
+
+        </nav>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         CONTENIDO PRINCIPAL
+         ================================================== -->
+
+    <main class="programa-content">
+
+
+        <!-- ==================================================
+             ENCABEZADO
+             ================================================== -->
+
+        <section class="programa-heading">
+
+
+            <div class="programa-heading-icon">
+
+                <i class="bi bi-music-note-list"></i>
+
+            </div>
+
+
+            <div>
+
+                <h1>
+
+                    Programa musical
+
+                </h1>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             TÍTULO DEL PROGRAMA
+             ================================================== -->
+
+        <div class="programa-subtitulo">
+
+            Programa Musical Completo
+
+        </div>
+
+
+
+        <!-- ==================================================
+             LISTA MUSICAL
+             ================================================== -->
+
+        <section class="programa-lista">
+
+
+            <!-- 01 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    01
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        El viejo Varieté
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 02 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    02
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Se dice de mí
+
+                        <span class="programa-referencia">
+
+                            (Mercado de Abasto)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 03 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    03
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Chattanooga Choo Choo
+
+                        <span class="programa-referencia">
+
+                            (Sun Valley Serenade)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 04 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    04
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Candilejas
+
+                        <span class="programa-referencia">
+
+                            (Limelight)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 05 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    05
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        New York, New York
+
+                        <span class="programa-referencia">
+
+                            (Películas varias)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 06 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    06
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Mamá Morton
+
+                        <span class="programa-referencia">
+
+                            (Chicago)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 07 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    07
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Soñar hasta enloquecer
+
+                        <span class="programa-referencia">
+
+                            (Drácula)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 08 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    08
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Si yo fuera rico
+
+                        <span class="programa-referencia">
+
+                            (El violinista en el tejado)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 09 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    09
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Nadie va a arruinar mi festival
+
+                        <span class="programa-referencia">
+
+                            (Funny Girl)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 10 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    10
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Tema de James Bond
+
+                        <span class="programa-referencia">
+
+                            (Característica bailada)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 11 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    11
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Goldfinger
+
+                        <span class="programa-referencia">
+
+                            (Goldfinger)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 12 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    12
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Tiempos de amor
+
+                        <span class="programa-referencia">
+
+                            (Rent)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 13 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    13
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Momento Disney
+
+                        <span class="programa-referencia">
+
+                            (Miscelánea)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 14 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    14
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Do Re Mi
+
+                        <span class="programa-referencia">
+
+                            (La novicia rebelde)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 15 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    15
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Sing Sing Sing
+
+                        <span class="programa-referencia">
+
+                            (Bailada)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- 16 -->
+
+            <article class="programa-card">
+
+                <div class="programa-numero">
+
+                    16
+
+                </div>
+
+                <div class="programa-datos">
+
+                    <div class="programa-tema">
+
+                        Gracias por la música
+
+                        <span class="programa-referencia">
+
+                            (ABBA)
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer class="footer">
+
+
+        <div class="footer-logo">
+
+            <img
+                src="img/logo-espectaculo.png"
+                alt="Logo Luces, Música, Acción!!">
+
+        </div>
+
+
+        <div class="footer-cooperativa">
+
+            Cooperativa de Comedia Musical Marplatense
+
+        </div>
+
+
+        <div class="footer-lugar">
+
+            Teatro Municipal Colón · Mar del Plata
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            © 2026 · Todos los derechos reservados
+
+        </div>
+
+
+    </footer>
+
+
+</div>
+
+
+
+<!-- ==================================================
+     BOOTSTRAP JS
+     ================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Elenco - Luces, Música, Acción!!</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS propio -->
+    <link rel="stylesheet"
+          href="css/estilos.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- ==================================================
+         HEADER
+         ================================================== -->
+
+    <header class="top-header">
+
+        <button
+            class="btn-menu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+        <div class="header-title">
+            Elenco
+        </div>
+
+        <div class="header-space"></div>
+
+    </header>
+
+
+    <!-- ==================================================
+         MENÚ
+         ================================================== -->
+
+    <div
+        class="offcanvas offcanvas-start menu-lateral"
+        tabindex="-1"
+        id="menuPrincipal">
+
+        <div class="menu-header">
+
+            <div class="logo-circulo">
+
+                <i class="bi bi-music-note-beamed"></i>
+
+            </div>
+
+            <div class="menu-identidad">
+
+                <div class="menu-titulo">
+                    ¡Luces, Música, Acción!!
+                </div>
+
+                <div class="menu-lugar">
+                    Teatro Colón · Mar del Plata
+                </div>
+
+            </div>
+
+            <button
+                type="button"
+                class="btn-close-menu"
+                data-bs-dismiss="offcanvas">
+
+                <i class="bi bi-x-lg"></i>
+
+            </button>
+
+        </div>
+
+
+        <nav class="menu-opciones">
+
+            <a href="index.html"
+               class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-house-fill"></i>
+                </span>
+
+                <span>Inicio</span>
+
+            </a>
+
+
+            <a href="sinopsis.html"
+               class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-book-half"></i>
+                </span>
+
+                <span>Sinopsis</span>
+
+            </a>
+
+
+            <a href="elenco.html"
+               class="menu-item activo">
+
+                <span class="menu-icono">
+                    <i class="bi bi-people-fill"></i>
+                </span>
+
+                <span>Elenco</span>
+
+            </a>
+
+
+            <a href="programa.html"
+               class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-music-note-list"></i>
+                </span>
+
+                <span>Programa Musical</span>
+
+            </a>
+
+
+            <a href="galeria.html"
+               class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-images"></i>
+                </span>
+
+                <span>Galería de Fotos</span>
+
+            </a>
+
+
+            <a href="entradas.html"
+               class="menu-item">
+
+                <span class="menu-icono">
+                    <i class="bi bi-ticket-perforated-fill"></i>
+                </span>
+
+                <span>Entradas</span>
+
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- ==================================================
+         CONTENIDO ELENCO
+         ================================================== -->
+
+    <main class="elenco-content">
+
+
+        <!-- ENCABEZADO -->
+
+        <section class="section-heading">
+
+            <div class="heading-icon">
+
+                <i class="bi bi-people-fill"></i>
+
+            </div>
+
+            <div>
+
+                <h1>Elenco</h1>
+
+                <p>
+                    Los artistas de Luces, Música, Acción!!
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             ARTISTAS
+             ================================================== -->
+
+        <section class="elenco-list">
+
+
+            <!-- CLAUDIA -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/claudia-rodriguez.jpg"
+                        alt="Claudia Rodriguez">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Claudia Rodriguez
+                    </h3>
+
+                    <p>
+                        Contralto / Dirección general
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- LUIS -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/luis-gabriel-fabiani.jpg"
+                        alt="Luis Gabriel Fabiani">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Luis Gabriel Fabiani
+                    </h3>
+
+                    <p>
+                        Barítono
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- MARÍA AZUL -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/imagenAzul.jpg"
+                        alt="María Azul Lucero Guzmán">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        María Azul Lucero Guzmán
+                    </h3>
+
+                    <p>
+                        Soprano
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- DIANA -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/diana-la-sala.jpg"
+                        alt="Diana La Sala">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Diana La Sala
+                    </h3>
+
+                    <p>
+                        Soprano
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- TAMARA -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/tamara-britos-indart.jpg"
+                        alt="Tamara Britos Indart">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Tamara Britos Indart
+                    </h3>
+
+                    <p>
+                        Contralto
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ANA -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/ana-di-iorio.jpg"
+                        alt="Ana Di Iorio">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Ana Di Iorio
+                    </h3>
+
+                    <p>
+                        Contralto
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- WALTER -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/walter-nelli.jpg"
+                        alt="Walter Nelli">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Walter Nelli
+                    </h3>
+
+                    <p>
+                        Barítono
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ÁMBAR -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/ambar-angelucci.jpg"
+                        alt="Ámbar Angelucci">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Ámbar Angelucci
+                    </h3>
+
+                    <p>
+                        Cantante y actriz
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- BRUNO -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/bruno-vuelo.jpg"
+                        alt="Bruno Vuelo">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Bruno Vuelo
+                    </h3>
+
+                    <p>
+                        Actor
+                    </p>
+
+                </div>
+
+            </article>
+
+
+                        <!-- MARCOS -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/marcos-daniel-antic.jpg"
+                        alt="Marcos Daniel Antic">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Marcos Daniel Antic
+                    </h3>
+
+                    <p>
+                        Actor
+                    </p>
+
+                </div>
+
+            </article>
+
+                        <!--BAILARINES -->
+
+            <article class="artist-card">
+
+                <div class="artist-photo">
+
+                    <img
+                        src="img/bailarines.png"
+                        alt="Bailarines">
+
+                </div>
+
+                <div class="artist-info">
+
+                    <h3>
+                        Bruno Medina - Corégrafo
+                    </h3>
+
+                    <p>
+                        Bailarines: 
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+
+            <img
+                src="img/logo-espectaculo.png"
+                alt="Luces, Música, Acción!!">
+
+        </div>
+
+        <div class="footer-cooperativa">
+
+            Cooperativa de Comedia Musical Marplatense
+
+        </div>
+
+        <div class="footer-lugar">
+
+            Teatro Municipal Colón · Mar del Plata
+
+        </div>
+
+        <div class="footer-copy">
+
+            © 2026 · Todos los derechos reservados
+
+        </div>
+
+    </footer>
+
+
+</div>
+
+
+<!-- Bootstrap JS -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+
+</html>
