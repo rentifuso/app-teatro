@@ -3432,3 +3432,16 @@ body {
 .bg-publi{
     color: #03134f;
 }
+
+/*---PÁGINA VIDEOS---*/
+.youtube-video{
+    aspect-ratio: 16/9;
+    width: 100%;
+   
+}
+
+.galeria-grid-vdeo{
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
