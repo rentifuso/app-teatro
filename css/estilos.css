@@ -3445,3 +3445,10 @@ body {
     margin-left: 2rem;
     margin-right: 2rem;
 }
+
+.galeria-grid-video{
+     max-width: 100%;       /* Evita que el contenedor sea más ancho que la pantalla */
+    overflow-wrap: break-word; /* Rompe las palabras largas si es necesario */
+    word-break: break-word;    /* Compatibilidad adicional para romper texto */
+    white-space: normal;       /* Permite que el texto salte de línea de forma natural */
+}
